@@ -1,0 +1,28 @@
+{
+  "total_files": 24,
+  "unique_commits": 10,
+  "avg_files_per_commit": 2.4,
+  "fix_type_distribution": {
+    "Add missing docstring": 3,
+    "Update setup.py": 2,
+    "Update minitwit.py": 2,
+    "Add missing font-family in css_t docs": 1,
+    "Update documentation": 1,
+    "Add note about url root fix": 1,
+    "Add more info about untested applications": 1,
+    "Add missing space in the example": 1,
+    "Improve debug output": 1,
+    "Add note about debugger security risk": 1,
+    "Add missing try/except block": 1,
+    "Add missing import": 1,
+    "Update docs for request_init and request_shutdown": 1,
+    "Add missing missing `andnkey`": 1,
+    "Add missing `connect_db`": 1,
+    "Add missing comment": 1,
+    "Fix failing test": 1,
+    "Add link to the documentation page": 1,
+    "Add test for missing session": 1,
+    "Add missing style tag": 1
+  },
+  "top_extensions": {}
+}
