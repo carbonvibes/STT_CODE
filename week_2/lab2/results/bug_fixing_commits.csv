@@ -1,0 +1,73 @@
+Hash,Message,Hashes of parents,Is a merge commit?,List of modified files
+1fff3e598126a084348ec2c112fdd3bc6b9a1ee0,Fixed a doc display bug and setup.py workaround for dev version.,05f36c7f7e2df36ee28f90d99632162579b1287c,False,flasky.css_t;deploying.rst;setup.py
+574e81f9c8bbdc41958e1e7a7613633b091101f8,Fixed a bug in setup.py,1fff3e598126a084348ec2c112fdd3bc6b9a1ee0,False,quickstart.rst;setup.py
+2f5a4f8dbc832b0daebcd66ea8b3969589191fa7,Doc updates and typo fixes,03148dba6b26a2694da1d466584f50189c52e7b3,False,testing.rst;README;minitwit.py;timeline.html
+a01e8b49ca66608f0bd46134ff02deeb5724c799,Fixed a documentation error and implemented template context processors.,36071ca1f42a26ef327e9d14e4909a8c92cd4fae,False,flask.py
+40e0024d7b87150ed694829a5335bd2435962225,"Added screenshot of the debugger to Flask docs.  Flask now runs from the
+shell again.",6dd92ae4b32c336564231e10db12458a8b9261ca,False,debugger.png;quickstart.rst;flask.py
+7b5015010bc8c2a2d56c7c50b37e5b9facdad102,"Preserve the request context in debug mode.
+
+This makes it possible to access request information in the interactive
+debugger.  Closes #8.",40e0024d7b87150ed694829a5335bd2435962225,False,flask.py
+fb2d2e446bdd806ea3de7b869c7371e2dae57a23,"request_init -> before_request and request_shutdown -> after_request
+
+This fixes #9.",7b5015010bc8c2a2d56c7c50b37e5b9facdad102,False,patterns.rst;tutorial.rst;flaskr.py;minitwit.py;flask.py;flask_tests.py
+791cdb28f593d4d7649d88407fcd193834512219,Fixed capitalization on website,9fbf9a062c11904b5022a5aa7941449e31340c32,False,index.html
+5310fc38227b1907cb541f4a30ea8dfef46c2e19,"Session falls back to a dummy object now if secret_key is missing.
+
+This makes it possible to still read-only access the empty session but
+requires the secret key to be set for write access.  The error message
+raised explains that.  This closes #10.",791cdb28f593d4d7649d88407fcd193834512219,False,flask.py;flask_tests.py
+42dd94b7565052120423dbd86a5ab0f96938f8cc,Fixed title.,b4cd70d054a1514adaed893663cfa22b73114d1e,False,404.html
+42a46ed09b745c0560de354c0cb236295000f296,Fixed homepage links,123a1ad019a842a07a84aace66fd7a33f6f68cb9,False,index.html
+73a47a0db1a181bb305684115d3dacded0c5a58b,Removed unused stuff from minitwit and fixed a bug.,0770f5c6375e3e45fa3ac918217df5d885176173,False,minitwit.py
+ade490514dd6d83adc7610f69f9c4cd68df47110,"Fixed a security problem caused by changed simplejson semantics.
+
+Notice: this was never in a release version of Flask.",07e515b071e32e1b22e9992cedabeb082a8cde6c,False,api.rst;jquery.rst;flask.py;flask_tests.py
+3088a9371e065808fd0091741f62bc242bcab1f9,"Make it easier to associate a rule, endpoint and view_function
+This resolves http://github.com/mitsuhiko/flask/issues/issue/11",36f105c2932af842de5d18899783f33078415c7f,False,flask.py;flask_tests.py
+3a1e51865786474c44a04c0d422515047dd27223,Fixed typo and added AUTHORS file and license text to docs.,715f64d2afef0e5b9800f0e0fb0eb9c892e1573a,False,AUTHORS;LICENSE;index.rst;license.rst;flask.py
+9f6bc93e4de36fc209eb1203845e9505df1ca379,"Fixed XSS problem by escaping all slashes in JSON.
+
+This also probes simplejson first to figure out if it escapes slashes
+which it did in earlier versions.",268302fc68c35abd555a8c2d2755f14c96e1401d,False,flask.py;flask_tests.py
+3c821a0fa45082bcec73dfb08662fb1de5263c48,Fix typos and remove unused import.,9f6bc93e4de36fc209eb1203845e9505df1ca379,False,api.rst;jquery.rst;packages.rst;minitwit.py;flask.py;setup.py
+00f87f679cdd63b642675d86d073882fb8b19430,flask uses 127.0.0.1 as host by default now. stupid chrome.,260b4dfe61cd35373eb4993453b500e1db71a753,False,quickstart.rst;flask.py
+9d340ad7477774a19a7bdffc83d6cb8cb3e05edc,"Fix a doc oversight, and revert 5876a8fd.",9cf2ea2abc5243d50c87612714904c6cb033f7cc,False,testing.rst;flask.py
+b6e73305392c9de052e51cca6fae8fee12ae231e,Use setdefault() because it sets session.modified correctly.,7cf5a9bf6e34fc57f82e560f01c408fbe603e9d4,False,flask.py;flask_tests.py
+f014ce29a7cd5a3ccfabd61e7d66e017ed958e25,"Fix a doc oversight, and revert 5876a8fd.",5876a8fd96efa01958904ca0796eb4018222bf25,False,testing.rst;flask.py
+dbe0df756bf587b242f2406bef9e7e8ef26f0813,Use setdefault() because it sets session.modified correctly.,3eacc1d06816b2544e0242665fe909b24b027b21,False,flask.py;flask_tests.py
+36717b02731ad7d86ba8effbe27e70405e48cd9b,Added support for long running sessions.  This closes #16.,2ba88eefb54f76fc974181babac07ffc7c1f7e73,False,Makefile;api.rst;flask.py;flask_tests.py
+f1603d33f266ab24eda604f76632fa604b91e3f9,Docs mention query args now.  This fixes #20,31493850de3d7765d09419aa49b98089f79da3c2,False,quickstart.rst;flask.py
+9248a7baca5bc616a60f9b63b525e872fbfddef2,None responses fail properly now.  This fixes #24,d0eefb01d16bd058172363a9847b5d98ccd1abc9,False,flask.py
+67fc46526234653b0a519e9f1e8a05a2c40c80f8,"Fix typo, remove useless import, limit lines to 79 columns.",f345af8d9d33e6164747c865c29a72186a470c22,False,flask.py;flask_tests.py
+a921aef6c47cecbacef5173f03c07c52e6bc8fea,Fixed late binding of url_prefix.  This fixes #29.,720bede150d835be0ffedf4d480482552c90908d,False,flask.py;flask_tests.py
+745638e774063de206aae930df71789de13e7c73,"Added missing decorators for module wide context processors.
+
+This fixes #25.",7f837901cb9b3ba7d68ea0a983d86dfc508a9c6d,False,flask.py;flask_tests.py
+e409bc792d4419ed588afbc60c53b61923c415a7,Fixed typo,f4269b1fe7fe4c17a99bc7ca0dddafd17bed14e9,False,flask.py
+a5a41d40aaa9f6ed70b487133ddaf48ceb3d054f,Fix typo.,93a8ca02822d07cd9f13495f53d27ab22e9adf3a,False,flask.py
+693e4449f87950c764a928690f4437fd6b1b4d7d,Fix typo.,a5a41d40aaa9f6ed70b487133ddaf48ceb3d054f,False,flask.py
+35ed617fe41b184288892f733ce07d94391b76b1,"Added support for flashing categories.
+
+This fixes #35.",693e4449f87950c764a928690f4437fd6b1b4d7d,False,CHANGES;flask.py;flask_tests.py
+931dcc4c80331d372d70d7a0a5c8e6d49223e2bf,Fixed a doc bug and added distribtue docs.,35ed617fe41b184288892f733ce07d94391b76b1,False,installation.rst;distribute.rst;flashing.rst;index.rst;flask.py
+54c3df60cd533ea80d347f6715ee84f6a560b5d5,Fixed a doc config error,267f5f5c82a1ec9966bfb4e1e0c3f7cc4c80ed12,False,conf.py
+b26aeba972686b9cb9a9b111e1bc8997e1f259c8,Fixed a testcase,7bb0e33a687b3498c401a8dbcf7864d543a1817a,False,flask_tests.py
+ef0dc1800f7558abbefe070f361b97b9161b2452,"Added interactive Python docs, fixed part style.",9d98ad5e079b88fd9da87e47d55a11e465ab6bb0,False,CHANGES;contents.rst.inc;flaskstyle.sty;index.rst;latexindex.rst;shell.rst;flask.py;flask_tests.py
+6c095deda51efb34cd18bd23411ebd6f2a0cdfe0,Fixed docstring.  This fixes #45,ef0dc1800f7558abbefe070f361b97b9161b2452,False,flask.py
+9d19b77acf413de77b39ed1c6d972fb1e5fef1c3,"Added lazyloading pattern and explicit chapter links in tutorial.
+
+This fixes #49.",6c095deda51efb34cd18bd23411ebd6f2a0cdfe0,False,_themes;conf.py;index.rst;lazyloading.rst;css.rst;dbcon.rst;dbinit.rst;folders.rst;introduction.rst;schema.rst;setup.rst;templates.rst;testing.rst;views.rst;minitwit.py
+8d356d7cda963e2fa6437c5a5fef035e13cc80c5,Fixed a build error and added a touch icon,74d458b40c0bdb140e7feab9af407642eb3dcea1,False,touch-icon.png;_themes;conf.py;mod_wsgi.rst
+e432d833b5f7b4c27e2dca5d5125bbf78a46327d,Fixed stuff I broke,8d356d7cda963e2fa6437c5a5fef035e13cc80c5,False,minitwit.py
+6cb0855e2dd181df5353fc1be9b437c7bc92eb2f,Fixed an error reporting bug with flask.Config.from_envvar,6913dc173303de9534c32d716c22b7f371ab6303,False,CHANGES;flask.py;flask_tests.py
+7a4b6088395387abe4127c9650f9cbaac11a0ec4,"Add Module.app_errorhandler, like Flask.errorhandler.",a224fecfd57a77c3f7279102dcc0b332a6858065,False,flask.py;flask_tests.py
+707b30749daf407c07b5b265bd892564576ad80a,use setup.py test. This fixes #56,a6617f44c0416c6877d930b312e1f64df08eca0e,False,Makefile;setup.py
+33e7f2b990e3889d6aa9cffef4a4c9d7d0923698,Invoke after_request on exceptions as well. This fixes #59,ee69fb58906818f50a2afe71e4ecde7af96b791a,False,flask.py;flask_tests.py
+bc00fd1e83f23f57dd6a765b6a4bab2394584ae6,Added support for deferred context cleanup. test_client users can now access the context locals after the actual request if the client is used with a with-block. This fixes #59.,937360877bd425543e06decd68a62e086b78bf6b,False,CHANGES;api.rst;testing.rst;flask.py;flask_tests.py
+9983e847425621b5e474ae9da6822f1af0b0cc1f,Fixed after_request handlers being called twice in some cases and improved logging system,bc00fd1e83f23f57dd6a765b6a4bab2394584ae6,False,CHANGES;flask.py;flask_tests.py
+12c2cb5e12895a0d16b37b7a9e9a96d69a34c36e,Typo in docs for Flask.handle_exception,f904ef27d3d1f4e03972c34858787294c74c164f,False,flask.py
+cc7876f97fbc787ac7702453bdc62541f8ea47f6,"Fix in docs for handle_exception: ""A"" before nouns pronounced with an initial consonant sound",12c2cb5e12895a0d16b37b7a9e9a96d69a34c36e,False,flask.py
+e67903d134039b2452b2a3806e10451491ce768d,"Fixing another article error, in handle_http_exception.",cc7876f97fbc787ac7702453bdc62541f8ea47f6,False,flask.py
+88a031ab24b0e7e2a5190f9e48f80f2b21aba1a0,"Revert that change, an HTTP is correct from what I know.",7dae84f0027945bac29b45b63fdc0f795a5a813a,False,flask.py

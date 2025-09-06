@@ -1,0 +1,70 @@
+{
+  "rq1_developer_evaluation": {
+    "total_commits": 50,
+    "precise_messages": 0,
+    "hit_rate": 0.0,
+    "average_precision_score": 0.40399999999999997,
+    "message_categories": {
+      "specific": 0,
+      "generic": 24,
+      "very_generic": 7,
+      "descriptive": 19
+    },
+    "precision_distribution": {
+      "mean": 0.40399999999999997,
+      "std": 0.11825396399275585,
+      "median": 0.4,
+      "min": 0.2,
+      "max": 0.6000000000000001
+    }
+  },
+  "rq2_llm_evaluation": {
+    "total_llm_messages": 24,
+    "precise_llm_messages": 0,
+    "hit_rate": 0.0,
+    "average_precision_score": 0.07083333333333335,
+    "improvement_over_original": 0.08333333333333333,
+    "average_original_score": 0.2583333333333333,
+    "score_improvement": -0.18749999999999994,
+    "llm_success_rate": 1.0
+  },
+  "rq3_rectifier_evaluation": {
+    "total_rectified": 24,
+    "successful_rectifications": 13,
+    "hit_rate": 0.5416666666666666,
+    "average_score_improvement": 0.22083333333333333,
+    "median_score_improvement": 0.29999999999999993,
+    "improvement_categories": {
+      "significant": 12,
+      "moderate": 1,
+      "minor": 0,
+      "no_change": 11,
+      "degradations": 0
+    },
+    "before_after_comparison": {
+      "avg_original": 0.2583333333333333,
+      "avg_rectified": 0.4791666666666667,
+      "improvement_ratio": 1.8548387096774197
+    }
+  },
+  "overall_statistics": {
+    "data_summary": {
+      "total_commits_analyzed": 50,
+      "total_file_changes": 24,
+      "total_rectifications": 24
+    },
+    "commit_statistics": {
+      "unique_authors": 6,
+      "total_lines_changed": 1773,
+      "avg_lines_per_commit": 35.46,
+      "avg_files_per_commit": 2.62
+    },
+    "rectification_effectiveness": {
+      "overall_improvement_rate": 0.5416666666666666,
+      "average_score_before": 0.2583333333333333,
+      "average_score_after": 0.4791666666666667,
+      "relative_improvement": 0.8548387096774196
+    }
+  },
+  "generated_at": "2025-08-18T09:26:15.287493"
+}

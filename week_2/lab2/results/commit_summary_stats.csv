@@ -1,0 +1,12 @@
+,hash,message,author,author_email,date,parent_hashes,is_merge_commit,modified_files,lines_added,lines_deleted,files_changed,bug_indicators
+count,50,50,50,50,50,50,50,50,50.0,50.0,50.0,50
+unique,50,47,6,6,48,50,1,25,,,,31
+top,1fff3e598126a084348ec2c112fdd3bc6b9a1ee0,Fix typo.,Armin Ronacher,armin.ronacher@active-4.com,2010-06-05T19:34:18+08:00,['05f36c7f7e2df36ee28f90d99632162579b1287c'],False,['flask.py'],,,,"{'keywords_found': ['fix'], 'issue_references': [], 'urgency_indicators': [], 'bug_type_hints': []}"
+freq,1,2,37,37,3,1,50,11,,,,16
+mean,,,,,,,,,29.76,5.7,2.62,
+std,,,,,,,,,48.816006073618844,11.537428001853758,2.406538711807597,
+min,,,,,,,,,0.0,0.0,1.0,
+25%,,,,,,,,,2.0,1.0,1.0,
+50%,,,,,,,,,10.5,2.0,2.0,
+75%,,,,,,,,,33.75,4.0,3.0,
+max,,,,,,,,,215.0,75.0,15.0,
