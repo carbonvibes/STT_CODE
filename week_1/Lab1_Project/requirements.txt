@@ -1,0 +1,3 @@
+# Requirements for Lab1 Project
+# No external dependencies required for the basic calculator
+# This file is included for GitHub Actions workflow compatibility
