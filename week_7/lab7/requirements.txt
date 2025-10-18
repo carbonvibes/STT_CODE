@@ -1,0 +1,12 @@
+# Requirements for Lab 7: Reaching Definitions Analyzer
+
+# Python version: 3.10 or later
+
+# No external Python packages required - uses only standard library
+# However, Graphviz system package is required for CFG visualization
+
+# System requirements:
+# - graphviz (install with: apt-get install graphviz or brew install graphviz)
+
+# Optional for enhanced output:
+# - markdown viewer for reading reports
