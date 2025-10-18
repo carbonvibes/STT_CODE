@@ -1,0 +1,4 @@
+Tool,Total_CWEs_Detected,Top_25_CWEs_Detected,Top_25_Coverage_Percentage,Total_Findings,Average_Findings_Per_CWE
+Bandit,6,3,12.0,79,8.777777777777779
+Semgrep,7,5,20.0,212,13.25
+CodeQL,7,4,16.0,147,10.5
